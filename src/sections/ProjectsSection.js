@@ -7,7 +7,7 @@ const projects = [
     url: "https://lucask95.github.io/",
     imageUrl: "img/github.png",
     date: "2021",
-    technologies: ["React", "tailwind-css"],
+    technologies: ["React", "Tailwind CSS"],
   },
   {
     name: "Watch First, Think Later",
@@ -16,7 +16,7 @@ const projects = [
     url: "https://watch-first-think-later.vercel.app/",
     imageUrl: "img/wftl.jpg",
     date: "April 2021",
-    technologies: ["React", "Next.js", "next-auth", "MongoDB", "Material UI"],
+    technologies: ["React", "Next.js", "Next Auth", "MongoDB", "Material UI"],
   },
   {
     name: "Super Smash Bros. Melee PR Maker",
@@ -35,6 +35,15 @@ const projects = [
     imageUrl: "img/clothes.jpg",
     date: "",
     technologies: ["JavaScript", "Skeleton"],
+  },
+  {
+    name: "r/MaleFashionAdvice WAYWT Scraper",
+    description:
+      "A python script that automates the process of getting the top 3 submissions from each What Are You Wearing Today (WAYWT) thread for a given month. Automatically saves images and creates the markdown for a comment with the details for each post. Created for myself and the other moderators of the r/MaleFashionAdvice subreddit.",
+    url: "https://github.com/lucask95/mfa-waywt-scraper",
+    imageUrl: "img/mfascript.jpg",
+    date: "",
+    technologies: ["Python"],
   },
   {
     name: "Life Counter",
