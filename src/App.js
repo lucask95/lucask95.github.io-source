@@ -1,4 +1,5 @@
 import IntroSection from "./sections/IntroSection";
+import ProjectsSection from "./sections/ProjectsSection";
 
 function App() {
   return (
@@ -7,8 +8,9 @@ function App() {
         <p className='font-bold'>Lucas Keller</p>
       </header>
 
-      <main className='flex-1 py-8 px-20'>
+      <main className='flex-1 py-8 md:px-20'>
         <IntroSection />
+        <ProjectsSection />
       </main>
 
       <footer>Github Linkedin Resume Contact</footer>

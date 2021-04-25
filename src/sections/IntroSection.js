@@ -2,11 +2,8 @@ import React from "react";
 
 export default function IntroSection() {
   return (
-    <section className='md:flex md:flex-row mb-8'>
-      <div
-        className='flex justify-center mb-8 md:mb-0'
-        style={{ minWidth: 200 }}
-      >
+    <section className='space-y-8 md:flex md:flex-row my-16 md:my-8'>
+      <div className='flex justify-center' style={{ minWidth: 200 }}>
         <img
           src='/img/face.jpg'
           alt='Lucas'
@@ -26,7 +23,7 @@ export default function IntroSection() {
           To contact me,{" "}
           <a
             href='mailto:lucaskeller1995@gmail.com'
-            className='text-blue-500 hover:underline focus:underline'
+            className='text-blue-500 underline'
           >
             send me an email.
           </a>
