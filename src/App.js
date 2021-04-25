@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import IntroSection from "./sections/IntroSection";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className='container mx-auto flex flex-col min-h-screen'>
+      <header className='p-8 text-5xl border-b-2 border-black'>
+        <p className='font-bold'>Lucas Keller</p>
       </header>
+
+      <main className='flex-1 py-8 px-20'>
+        <IntroSection />
+      </main>
+
+      <footer>Github Linkedin Resume Contact</footer>
     </div>
   );
 }
