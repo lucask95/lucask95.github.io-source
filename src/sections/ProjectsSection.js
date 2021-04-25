@@ -15,7 +15,7 @@ const projects = [
       "A website to catalog all of my quick film reviews, and hopefully some short video content in the near-future.",
     url: "https://watch-first-think-later.vercel.app/",
     imageUrl: "img/wftl.jpg",
-    date: "April 2021",
+    date: "2021",
     technologies: ["React", "Next.js", "Next Auth", "MongoDB", "Material UI"],
   },
   {
@@ -24,7 +24,7 @@ const projects = [
       "A tool to help administrators of regional Super Smash Bros. Melee Facebook groups to make player rankings images for their area. Aimed towards people without image-editing software like Photoshop",
     url: "/projects/pr-helper/index.html",
     imageUrl: "img/prmaker.jpg",
-    date: "",
+    date: "2017",
     technologies: ["Javascript"],
   },
   {
@@ -33,7 +33,7 @@ const projects = [
       "A list of web stores from which men can buy clothing. Can be organized by style, price, and location.",
     url: "/projects/clothes/index.html",
     imageUrl: "img/clothes.jpg",
-    date: "",
+    date: "2017",
     technologies: ["JavaScript", "Skeleton"],
   },
   {
@@ -42,7 +42,7 @@ const projects = [
       "A python script that automates the process of getting the top 3 submissions from each What Are You Wearing Today (WAYWT) thread for a given month. Automatically saves images and creates the markdown for a comment with the details for each post. Created for myself and the other moderators of the r/MaleFashionAdvice subreddit.",
     url: "https://github.com/lucask95/mfa-waywt-scraper",
     imageUrl: "img/mfascript.jpg",
-    date: "",
+    date: "2018",
     technologies: ["Python"],
   },
   {
@@ -51,7 +51,7 @@ const projects = [
       "Just a little life counter to help me out when I play Magic: the Gathering. Designed for mobile devices.",
     url: "/projects/lifecounter/index.html",
     imageUrl: "img/lifecounter.jpg",
-    date: "",
+    date: "2019",
     technologies: ["Vue"],
   },
 ];
@@ -80,6 +80,7 @@ export default function ProjectsSection() {
               >
                 {project.name}
               </a>
+              <p className='text-gray-400 italic inline ml-4'>{project.date}</p>
               <p className='text-lg mb-4'>{project.description}</p>
               <ul className='text-gray-500'>
                 {project.technologies.map((item) => (
