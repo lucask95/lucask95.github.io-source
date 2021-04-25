@@ -1,3 +1,4 @@
+import ExperienceSection from "./sections/ExperienceSection";
 import IntroSection from "./sections/IntroSection";
 import ProjectsSection from "./sections/ProjectsSection";
 
@@ -11,6 +12,7 @@ function App() {
       <main className='flex-1 py-8 md:px-20'>
         <IntroSection />
         <ProjectsSection />
+        <ExperienceSection />
       </main>
 
       <footer>Github Linkedin Resume Contact</footer>
