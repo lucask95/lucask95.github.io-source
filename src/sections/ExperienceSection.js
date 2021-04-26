@@ -20,6 +20,18 @@ const experienceItems = [
   },
 ];
 
+const languages = ["JavaScript", "Java", "Python", "HTML", "CSS", "C#"];
+
+const frameworks = [
+  "React",
+  "Apache Tapestry",
+  "Next.js",
+  "Material UI",
+  "Styled Components",
+  "Tailwind CSS",
+  "Bootstrap",
+];
+
 export default function ExperienceSection() {
   return (
     <SectionLayout header='Experience'>
@@ -38,12 +50,32 @@ export default function ExperienceSection() {
         .
       </p>
       {experienceItems.map((item) => (
-        <div>
+        <div className='text-lg'>
           <p className='font-bold'>{item.title}</p>
           <p className='text-gray-400 italic'>{item.date}</p>
           <p>{item.description}</p>
         </div>
       ))}
+
+      <div className='text-lg grid grid-cols-2'>
+        <div>
+          <h4 className='font-bold mb-2'>Programming Languages</h4>
+          <ul className='list-disc list-inside'>
+            {languages.map((item) => (
+              <li>{item}</li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <h4 className='font-bold mb-2'>Frameworks, Libraries, Etc.</h4>
+          <ul className='list-disc list-inside'>
+            {frameworks.map((item) => (
+              <li>{item}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
     </SectionLayout>
   );
 }
