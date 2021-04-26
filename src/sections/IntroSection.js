@@ -10,13 +10,15 @@ export default function IntroSection() {
           style={{ borderRadius: 999, width: 200, height: 200 }}
         />
       </div>
-      <div className='px-8 flex-1'>
+      <div className='px-8 flex-2'>
         <h3 className='text-3xl mb-4'>Hey, Lucas here.</h3>
-        <p className='text-xl'>
-          I'm a developer in the San Francisco Bay Area.
+        <p className='text-xl mb-2'>
+          I'm a developer in the San Francisco Bay Area. My interests include
+          photography, watching films, listening to music, eating jalapeño
+          Kettle chips, and playing Super Smash Bros Melee.
         </p>
-        <p className='text-xl'>
-          Browse around to check out my personal projects, work experience, or
+        <p className='text-xl mb-1'>
+          Browse around to check out my personal projects and work experience or
           just find out a little about me.
         </p>
         <p className='text-xl'>

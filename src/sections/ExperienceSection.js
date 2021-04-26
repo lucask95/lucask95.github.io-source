@@ -1,4 +1,5 @@
 import React from "react";
+import SectionLayout from "./components/SectionLayout";
 
 const experienceItems = [
   {
@@ -21,8 +22,7 @@ const experienceItems = [
 
 export default function ExperienceSection() {
   return (
-    <section className='mt-8 space-y-6 text-xl'>
-      <h3 className='text-4xl mb-8 font-mono'>&gt; Experience</h3>
+    <SectionLayout header='Experience'>
       <p className='text-lg'>
         This is just a quick snapshot. For more details, you can take a look at{" "}
         <a href='/lucas-keller-resume.pdf' className='text-blue-500 underline'>
@@ -44,6 +44,6 @@ export default function ExperienceSection() {
           <p>{item.description}</p>
         </div>
       ))}
-    </section>
+    </SectionLayout>
   );
 }
