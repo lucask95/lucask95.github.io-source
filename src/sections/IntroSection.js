@@ -2,7 +2,7 @@ import React from "react";
 
 export default function IntroSection() {
   return (
-    <section className='space-y-8 md:flex md:flex-row my-16 md:my-8'>
+    <section className='space-y-8 md:space-x-4 md:space-y-0 md:flex md:flex-row my-16 md:my-8'>
       <div className='flex justify-center' style={{ minWidth: 200 }}>
         <img
           src='/img/face.jpg'

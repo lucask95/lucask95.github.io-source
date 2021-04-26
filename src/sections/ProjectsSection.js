@@ -6,7 +6,7 @@ const projects = [
     name: "lucask95.github.io",
     description:
       "You are here! My personal portfolio. Responsive design for both mobile and desktop.",
-    url: "https://lucask95.github.io/",
+    url: "https://github.com/lucask95/lucask95.github.io-source",
     imageUrl: "img/github.png",
     date: "2021",
     technologies: ["React", "Tailwind CSS"],
