@@ -2,15 +2,19 @@ import React from "react";
 
 export default function IntroSection() {
   return (
-    <section className='space-y-8 md:space-x-4 md:space-y-0 md:flex md:flex-row my-16 md:my-8'>
-      <div className='flex justify-center' style={{ minWidth: 200 }}>
+    <section className='space-y-8 md:mb-12 md:space-x-4 md:space-y-0 md:flex md:flex-row my-16 md:my-8'>
+      <div
+        className='flex md:w-1/5 md:flex-col justify-center md:h-auto'
+        style={{ minWidth: 200 }}
+      >
         <img
           src='/img/face.jpg'
           alt='Lucas'
-          style={{ borderRadius: 999, width: 200, height: 200 }}
+          className='object-contain max-w-sm'
+          style={{ borderRadius: 999 }}
         />
       </div>
-      <div className='px-8 flex-2'>
+      <div className='px-8 flex-1 flex flex-col justify-center'>
         <h3 className='text-3xl mb-4'>Hey, Lucas here.</h3>
         <p className='text-xl mb-2'>
           I'm a developer in the San Francisco Bay Area. My interests include
