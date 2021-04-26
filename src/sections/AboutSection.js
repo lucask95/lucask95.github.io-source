@@ -24,6 +24,48 @@ const films = [
   },
 ];
 
+const albums = [
+  {
+    artist: "Sufjan Stevens",
+    title: "Illinois",
+    imageUrl: "img/about/albums/illinois.jpg",
+  },
+  {
+    artist: "Tycho",
+    title: "Dive",
+    imageUrl: "img/about/albums/dive.jpg",
+  },
+  {
+    artist: "The Postal Service",
+    title: "Give Up",
+    imageUrl: "img/about/albums/giveup.jpg",
+  },
+  {
+    artist: "Chvrches",
+    title: "The Bones of What You Believe",
+    imageUrl: "img/about/albums/churches.jpg",
+  },
+];
+
+const photos = [
+  {
+    src: "img/about/photos/1.jpg",
+    alt: "car under a tree",
+  },
+  {
+    src: "img/about/photos/2.jpg",
+    alt: "shadow on a wall",
+  },
+  {
+    src: "img/about/photos/3.jpg",
+    alt: "olive tree next to an orange building",
+  },
+  {
+    src: "img/about/photos/4.jpg",
+    alt: "covered car under an American flag",
+  },
+];
+
 export default function AboutSection() {
   return (
     <SectionLayout header='About Me'>
@@ -48,11 +90,40 @@ export default function AboutSection() {
           .
         </p>
       </div>
+
       <h4 className='text-2xl font-medium'>
         Get to Know Me &ndash; Lightning Round
       </h4>
+
+      <p>
+        <span className='font-medium'>Super Smash Bros. Melee Main:</span> Fox
+      </p>
+
+      <p>
+        <span className='font-medium'>Favorite Chip:</span> Jalapeño Kettle
+        Chips
+      </p>
+
+      <p>
+        <span className='font-medium'>
+          Some of my Magic: the Gathering Commanders:
+        </span>{" "}
+        Kiki-Jiki, Mirror Breaker; The Scarab God; Ruric Thar, the Unbowed
+      </p>
+
       <div>
-        <h5 className='font-medium mb-2'>Favorite Films</h5>
+        <h5 className='font-medium text-xl mb-4'>Some Photos I've Taken</h5>
+        <div className='grid grid-cols-2 gap-4 md:grid-cols-4'>
+          {photos.map((photo) => (
+            <div key={photo.alt} className='space-y-2'>
+              <img src={photo.src} alt={photo.alt} />
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div>
+        <h5 className='font-medium text-xl mb-4'>Favorite Films</h5>
         <div className='grid grid-cols-2 gap-4 md:grid-cols-4'>
           {films.map((film) => (
             <div key={film.name} className='space-y-2'>
@@ -62,6 +133,21 @@ export default function AboutSection() {
                 <span className='ml-2 text-base text-gray-400 italic'>
                   ({film.year})
                 </span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div>
+        <h5 className='font-medium text-xl mb-4'>Favorite Albums</h5>
+        <div className='grid grid-cols-2 gap-4 md:grid-cols-4'>
+          {albums.map((album) => (
+            <div key={album.title} className='space-y-2'>
+              <img src={album.imageUrl} alt={album.title} className='rounded' />
+              <div className='text-center'>
+                <div>{album.artist}</div>
+                <div className='text-gray-500 text-base'>{album.title}</div>
               </div>
             </div>
           ))}
