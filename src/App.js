@@ -1,3 +1,4 @@
+import AboutSection from "./sections/AboutSection";
 import ExperienceSection from "./sections/ExperienceSection";
 import IntroSection from "./sections/IntroSection";
 import ProjectsSection from "./sections/ProjectsSection";
@@ -13,6 +14,7 @@ function App() {
         <IntroSection />
         <ProjectsSection />
         <ExperienceSection />
+        <AboutSection />
       </main>
 
       <footer>Github Linkedin Resume Contact</footer>

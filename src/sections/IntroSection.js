@@ -14,8 +14,7 @@ export default function IntroSection() {
         <h3 className='text-3xl mb-4'>Hey, Lucas here.</h3>
         <p className='text-xl mb-2'>
           I'm a developer in the San Francisco Bay Area. My interests include
-          photography, watching films, listening to music, eating jalapeño
-          Kettle chips, and playing Super Smash Bros Melee.
+          photography, watching films, and playing Super Smash Bros Melee.
         </p>
         <p className='text-xl mb-1'>
           Browse around to check out my personal projects and work experience or
