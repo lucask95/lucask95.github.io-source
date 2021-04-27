@@ -52,7 +52,7 @@ function App() {
         <AboutSection />
       </main>
 
-      <footer className='p-8 border-t-2 border-black'>
+      <footer className='space-y-2 p-8 border-t-2 border-black'>
         <div>
           {links.map((link) => (
             <a
@@ -63,6 +63,15 @@ function App() {
               {link.text}
             </a>
           ))}
+        </div>
+        <div>
+          Icons by{" "}
+          <a
+            href='https://icons8.com/'
+            className='text-blue-500 underline mr-4'
+          >
+            Icons8
+          </a>
         </div>
       </footer>
     </div>
