@@ -14,11 +14,18 @@ const projects = [
   {
     name: "Watch First, Think Later",
     description:
-      "A website to catalog all of my quick film reviews, and hopefully some short video content in the near-future.",
+      "A website to catalog all of my quick film reviews, and hopefully some short video content in the near-future. Server-side rendering and API routes in Next.js, authentication with Next Auth, and responsive design with Chakra UI.",
     url: "https://watch-first-think-later.vercel.app/",
     imageUrl: "img/wftl.jpg",
     date: "2021",
-    technologies: ["React", "Next.js", "Next Auth", "MongoDB", "Material UI"],
+    technologies: [
+      "React",
+      "Next.js",
+      "Next Auth",
+      "MongoDB",
+      "Material UI",
+      "Chakra UI",
+    ],
   },
   {
     name: "Super Smash Bros. Melee PR Maker",
@@ -77,7 +84,7 @@ export default function ProjectsSection() {
             >
               {project.name}
             </a>
-            <p className='text-gray-400 italic inline ml-4'>{project.date}</p>
+            <p className='text-gray-400 italic'>{project.date}</p>
             <p className='text-lg mb-4'>{project.description}</p>
             <ul className='text-gray-500'>
               {project.technologies.map((item) => (
