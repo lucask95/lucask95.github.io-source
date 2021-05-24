@@ -30,7 +30,14 @@ export default function IntroSection() {
             href='mailto:lucaskeller1995@gmail.com'
             className='text-blue-500 underline'
           >
-            send me an email.
+            send me an email
+          </a>{" "}
+          or{" "}
+          <a
+            href='https://www.linkedin.com/in/lucas-keller-535083116/'
+            className='text-blue-500 underline'
+          >
+            message me on LinkedIn.
           </a>
         </p>
       </div>

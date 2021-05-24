@@ -5,13 +5,14 @@ const experienceItems = [
   {
     title: "Software Engineer at Kyocera DDA",
     date: "2018 - Present",
-    description: "Web developer working on ECM products.",
+    description:
+      "Collaborated with project managers and designers to develop, maintain, and improve frontend code for multiple flagship ECM web applications. Develop using JavaScript, TypeScript, and Java with React and Apache Tapestry.",
   },
   {
     title: "Test Engineer at Kyocera DDA",
     date: "2017 - 2018",
     description:
-      "Performance and smoke testing on desktop and web applications.",
+      "Conducted manual and automated testing on web and Windows applications using Ranorex, Selenium, JMeter, and others. Performed frontend web page optimization and performance analysis using Chrome developer tools, Apache JMeter.",
   },
   {
     title: "Education",
@@ -20,7 +21,15 @@ const experienceItems = [
   },
 ];
 
-const languages = ["JavaScript", "Java", "Python", "HTML", "CSS", "C#"];
+const languages = [
+  "JavaScript",
+  "TypeScript",
+  "Java",
+  "Python",
+  "HTML",
+  "CSS",
+  "C#",
+];
 
 const frameworks = [
   "React",
@@ -29,7 +38,8 @@ const frameworks = [
   "Material UI",
   "Styled Components",
   "Tailwind CSS",
-  "Bootstrap",
+  "MongoDB",
+  "PostgreSQL",
 ];
 
 export default function ExperienceSection() {
@@ -68,7 +78,9 @@ export default function ExperienceSection() {
         </div>
 
         <div>
-          <h4 className='font-bold mb-2'>Frameworks, Libraries, Etc.</h4>
+          <h4 className='font-bold mb-2'>
+            Frameworks, Libraries, Servers, etc.
+          </h4>
           <ul className='list-disc list-inside'>
             {frameworks.map((item) => (
               <li>{item}</li>
