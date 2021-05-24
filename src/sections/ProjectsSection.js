@@ -28,6 +28,15 @@ const projects = [
     ],
   },
   {
+    name: "Deckshare",
+    description:
+      "A web application for quickly building and sharing Magic: the Gathering decks.",
+    url: "/assets/DeckshareTour.mp4",
+    imageUrl: "img/deckshare.jpg",
+    date: "2021",
+    technologies: ["React", "Next.js", "PostgreSQL", "Material UI"],
+  },
+  {
     name: "Super Smash Bros. Melee PR Maker",
     description:
       "A tool to help administrators of regional Super Smash Bros. Melee Facebook groups to make player rankings images for their area. Aimed towards people without image-editing software like Photoshop.",
